@@ -55,8 +55,7 @@ jobs:
             ${{ runner.os }}-pnpm-store-
       - name: Install dependencies
         run: pnpm i
-      - run: pnpm ci --if-present
-      - run: pnpm build --if-present
+      - run: pnpm build
 
   # Single deploy job since we're just deploying
   deploy:
